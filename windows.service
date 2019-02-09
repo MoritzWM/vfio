@@ -1,0 +1,11 @@
+[Unit]
+Description=QEMU virtual machine running a windows VM
+
+[Service]
+EnvironmentFile=/home/moritz/git/vfio/config
+ExecStart=/home/moritz/git/vfio/windows
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Windows
+GenericName=Operating System
+Comment=It is dark and stuffy here, even though we have windows
+Exec=sudo systemctl start windows
+StartupNotify=true
+Terminal=false
+Icon=windows
+Type=Application
