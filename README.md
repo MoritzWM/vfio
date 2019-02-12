@@ -2,9 +2,9 @@
 
 ## Acknowledgements
 This setup was made possible by:
-- the ArchWiki, most notably these two pages: [PCI passthrough via OVMF](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF "VFIO"),[QEMU](https://wiki.archlinux.org/index.php/QEMU "QEMU") 
+- the ArchWiki, most notably these two pages: [PCI passthrough via OVMF](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF "VFIO"), [QEMU](https://wiki.archlinux.org/index.php/QEMU "QEMU") 
 - YuriAlek, who has an amazing [GitLab repository](https://gitlab.com/YuriAlek/vfio) with everything. Especially the testing-auto branch is nice
-- joeknock90's[GitHub repository](https://github.com/joeknock90/Single-GPU-Passthrough), thats where I have the <rom file.../> part in my windows10.xml from
+- joeknock90's [GitHub repository](https://github.com/joeknock90/Single-GPU-Passthrough), thats where I have the <rom file.../> part in my windows10.xml from
 
 ## Hardware Setup
 - i7 7700K
