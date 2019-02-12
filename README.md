@@ -15,7 +15,7 @@ This setup was made possible by:
 ## How-to
 I basically followed the instructions in YuriAleks wiki and the ArchWiki, but here is what I did (approximately):
 - first, I set up my host according to the steps described in [Setting up IOMMU](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF#Setting_up_IOMMU) and [Isolating GPU](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF#Isolating_the_GPU)
-- I set up my VM with virt-manager and installed windows in it [VM setup](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF#Setting_up_an_OVMF-based_guest_VM)()
+- I set up my VM with virt-manager and installed windows in it (see [ArchWiki -- VFIO](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF#Setting_up_an_OVMF-based_guest_VM))
 - using virt-manager, I removed the SPICE display and other unnecessary stuff, and set it to pass through the GPU, a USB controller (which my mouse and keyboard are connected to) and my PCI sound card
 - using virsh (`virsh edit win10`), I set up additional stuff unavailable in virt-manager (see README in libvirt folder)
   - important here: set the rom file for the GPU (see below)
