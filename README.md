@@ -20,6 +20,7 @@ I basically followed the instructions in YuriAleks wiki and the ArchWiki, but he
 - using virsh (`virsh edit win10`), I set up additional stuff unavailable in virt-manager (see README in libvirt folder)
   - important here: set the rom file for the GPU (see below)
 - in the VM, installed the graphics driver and voila!
+- important: in the libvirt folder, there is the .xml file and an explanation what I did. Read it, otherwise the performance will be crap
 
 ## The GPU VBIOS
 You need to provide a patched GPU VBIOS if you want to use the boot GPU for your VM.
@@ -28,7 +29,7 @@ First, you need to extract the VBIOS:
   - some versions did not work for me, others did. Make sure to try a different version if it doesn't work
 - you can extract the VBIOS with the extract-vbios-nvflash.sh script (see scripts folder) and nvflash (from[techpowerup](https://www.techpowerup.com/download/nvidia-nvflash/))
 - if you run windows either in dualboot or in a VM with a dedicated GPU (like, the classical way), you can extract it with GPU-Z
-  - I needed to set the kernel parameter 'kvm.ignore_msrs=1' in my host, otherwise launching GPU-Z would crash my system
+  - I needed to set the kernel parameter `'kvm.ignore_msrs=1'` in my host, otherwise launching GPU-Z would crash my system (see this [reddit thread](https://www.reddit.com/r/VFIO/comments/ahg1ta/bsod_when_launching_gpuz/))
 
 Then, you need to patch it. joeknock90 made a nice [how-to](https://github.com/joeknock90/Single-GPU-Passthrough#procedure) for that.
 You can use the script he provides, or you can just use a hex-editor like bless and patch it manually. I patched it manually, it is very easy and probably quicker and safer.

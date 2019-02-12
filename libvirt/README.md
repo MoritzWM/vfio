@@ -72,6 +72,7 @@ The xml file was generated with virt-manager, but I did a lot of post-processing
   - when host and guest did not share the GPU, everything worked fine
   - however, when I used the boot GPU for the guest, ingame performance was shit
   - reason: GPU was not connected to PCIe x16 3.0, but PCIe x16 1.1 or so (GPU-Z shows that)
+    - GPU-Z might crash your system, see [this reddit thread](https://www.reddit.com/r/VFIO/comments/ahg1ta/bsod_when_launching_gpuz/) 
   - then I found [this reddit thread](https://www.reddit.com/r/VFIO/comments/9dr5sj/q35_chipset_inhibits_your_pcie_bus_lane_to_11/) which explained it all
   - so in the <address ... /> tag of the GPU to I modified bus to `bus='0x00'` (which is the pcie-root) and the slot what was the bus before, so `slot='0x05'`
   - now in GPU-Z, it shows me that the GPU is connected via PCI and the performance is great
