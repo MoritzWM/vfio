@@ -11,6 +11,7 @@
 		<summary lang="en">Launch Windows VM</summary>
 		<description lang="en">Launch Windows inside a virtual machine</description>
 		<license>GNU General Public License, v3</license>
+		<source>https://github.com/Mistadon/vfio/tree/master/script.windows</source>
 		<website>moritzwm.de</website>
 		<email>mail@moritzwm.de</email>
 		<assets>

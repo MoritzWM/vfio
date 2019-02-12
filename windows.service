@@ -2,8 +2,8 @@
 Description=QEMU virtual machine running a windows VM
 
 [Service]
-EnvironmentFile=/home/moritz/git/vfio/config
-ExecStart=/home/moritz/git/vfio/windows
+EnvironmentFile=/home/moritz/git/vfio/scripts/config
+ExecStart=sh /home/moritz/git/vfio/scripts/windows
 User=root
 Group=root
 

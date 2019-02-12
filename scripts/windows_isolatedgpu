@@ -1,0 +1,15 @@
+#!/bin/sh
+# This script starts the VM, but does not detach anything first.
+# It is useful when the GPU is detached (see archwiki, isolating GPU).
+# It automatically turns off the screen, so the monitor switches automatically,
+# and turns it back on once the VM is finished.
+
+sudo virsh start win10
+sleep 10
+xset dpms force off
+# Wait for the VM to finish
+while [[ $(pgrep qemu-system) ]]; do
+	sleep 5
+done
+
+xset dpms force on

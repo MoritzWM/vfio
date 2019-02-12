@@ -50,12 +50,12 @@ modprobe -r vfio_iommu_type1
 modprobe -r vfio
 
 ## Reattach the GPU
-virsh nodedev-reattach $VIRSH_GPU_AUDIO > /dev/null 2>&1
-virsh nodedev-reattach $VIRSH_GPU > /dev/null 2>&1
+virsh nodedev-reattach $VIRSH_GPU_AUDIO
+virsh nodedev-reattach $VIRSH_GPU
 
 ## Reload the framebuffer and console
 echo 1 > /sys/class/vtconsole/vtcon0/bind
-nvidia-xconfig --query-gpu-info > /dev/null 2>&1
+nvidia-xconfig --query-gpu-info
 echo "efi-framebuffer.0" > /sys/bus/platform/drivers/efi-framebuffer/bind
 
 ## Reload the Display Manager

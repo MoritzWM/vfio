@@ -5,4 +5,4 @@ A similar addon starts Steam.
 
 # Installation
 Compress this folder to a zip file.
-In Kodi, go to Addons. Somewhere, there is an option to select an addon from a zip file.
+In Kodi, go to Addons. Somewhere, there is an option to select an addon from a zip file, then select the zip file.
