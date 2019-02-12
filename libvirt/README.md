@@ -49,7 +49,7 @@ The xml file was generated with virt-manager, but I did a lot of post-processing
       <address type='pci' domain='0x0000' bus='0x03' slot='0x00' function='0x0'/>
     </controller>
 ```
-- CPU pinning gives a lot of performance (see[ArchWiki](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF#CPU_pinning))
+- CPU pinning gives a lot of performance (see [ArchWiki](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF#CPU_pinning))
 - also added iothreads and assigned one of them to the SCSI controller
 ## GPU rom file and PCIe port
 ```
