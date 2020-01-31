@@ -1,5 +1,10 @@
 # My VFIO setup
 
+## NOTE
+This is not maintained anymore. Gaming on Linux is very possible nowadays (see [ProtonDB](https://www.protondb.com/)).
+I don't have Windows anymore. I will keep this Repo up so someone might find it some day, but I will
+no longer contribute anything.
+
 ## Acknowledgements
 This setup was made possible by:
 - the ArchWiki, most notably these two pages: [PCI passthrough via OVMF](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF "VFIO"), [QEMU](https://wiki.archlinux.org/index.php/QEMU "QEMU") 
